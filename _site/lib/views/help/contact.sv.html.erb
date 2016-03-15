@@ -1,0 +1,110 @@
+<% @title = "Kontakta oss" %>
+
+<%= foi_error_messages_for :contact %>
+
+<div id="contact_preamble">
+
+    <% if !flash[:notice] %>
+        <h1>Kontakta en myndighet för att få officiell information</h1>
+        <ul>
+            <li><a href="<%= new_request_path %>">Gå hit</a> att göra en öppen begäran om allmän handling, i en öppen process, för kännedom
+            för svenska myndigheter.</li>
+
+            <li>
+            Ber du om privat information om dig själv?
+            Vänligen läs vår hjälpsida om
+            <a href="<%= help_requesting_path(:anchor => 'data_protection') %>">integritet och dataskydd</a>.
+            </li>
+        </ul>
+
+        <h1>Ta upp ett samhällsproblem med regeringen</h1>
+
+        <ul>
+            <li><a href="http://www.riksdagen.se/sv/ledamoter-partier/">Skriv till din riksdagsledamot, landstingspolitiker,
+            kommunalråd eller annan representant</a>.
+            <li><a href="http://www.regeringskansliet.se/">Regeringskansliet</a> är ett bra ställe att börja om du vill ta upp ett problem med den centrala regeringen. </li>
+        </ul>
+
+
+    <% end %>
+
+    <h1>Kontakta FrågaStaten-teamet</h1>
+    <% if !flash[:notice] %>
+            <ul>
+            <li>
+            Vänligen läs  <a href="<%= help_about_path %>">hjälpsidan</a> först, eftersom det kan
+            besvara din fråga snabbare.
+            </li>
+
+            <li>Vi vill gärna höra vad du har hittat med hjälp av denna webbplats.
+               ylla i detta formulär, eller skicka ett e-post till <a
+               href="mailto:<%=@contact_email%>"><%=@contact_email%></a>
+            </li>
+
+            <li>Vi är en <strong>ideell förening</strong> och inte en del av offentlig sektor.</li>
+            </ul>
+    <% end %>
+</div>
+
+<%= form_for :contact do |f| %>
+
+    <% if not @user %>
+        <p>
+            <label class="form_label" for="contact_name">Ditt namn:</label>
+            <%= f.text_field :name, :size => 20 %>
+            (or <%= link_to "sign in", signin_url(:r => request.fullpath) %>)
+        </p>
+
+        <p>
+            <label class="form_label" for="contact_email">Din e-postadress:</label>
+            <%= f.text_field :email, :size => 20 %>
+        </p>
+    <% end %>
+
+    <p>
+        <label class="form_label" for="contact_subject">Ämne:</label>
+        <%= f.text_field :subject, :size => 50 %>
+    </p>
+
+    <p>
+        <label class="form_label" for="contact_message">Meddelande till webbsida:</label>
+        <%= f.text_area :message, :rows => 10, :cols => 60 %>
+    </p>
+
+    <p style="display:none;">
+        <%= f.label :comment, 'Fyll inte i detta fält' %>
+        <%= f.text_field :comment %>
+    </p>
+
+    <% if !@last_request.nil? %>
+        <p>
+            <label class="form_label" for="contact_message">Inkludera länk till begäran:</label>
+            <%=request_link(@last_request) %>
+            <%= submit_tag "remove", :name => 'remove' %>
+        </p>
+    <% end %>
+    <% if !@last_body.nil? %>
+        <p>
+            <label class="form_label" for="contact_message">Inkludera länk till myndighet:</label>
+            <%=public_body_link(@last_body) %>
+            <%= submit_tag "remove", :name => 'remove' %>
+        </p>
+    <% end %>
+
+    <p class="form_note">
+      <strong> tekniska problem </ strong>, eller frågor
+         om Freedom of Information. Se upp på sidan om du vill
+         kontakta regeringen.
+    Vi kan bara hjälpa dig med <strong>tekniska problem</strong>, eller frågor
+       om Tryckfrihetsförordningen och Offentlighetsprincipen. Se ovanför på sidan om du vill
+       kontakta regeringen.
+    </P>
+
+
+    <div class="form_button">
+        <%= hidden_field_tag(:submitted_contact_form, 1) %>
+        <%= submit_tag "Skicka meddelande till den ideella föreningen", :disable_with => "Skickar..." %>
+        &lt;-- vi driver denna webbplats, inte regeringen!
+    </div>
+
+<% end %>

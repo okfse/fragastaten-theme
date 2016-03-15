@@ -1,0 +1,279 @@
+<% @title = "Göra begäran om allmän handling" %>
+
+<%= render :partial => 'sidebar' %>
+
+<h1 id="making_requests"><%= @title %> <a href="#making_requests">#</a> </h1>
+<dl>
+
+<strong>Aldrig gjort aldrig en begäran förut?</strong> Följ vår internationella
+<a href="https://www.mysociety.org/2014/08/15/how-to-make-a-freedom-of-information-request-with-FrågaStaten/"
+  title="Hur du gör en begäran om allmän handlingm med FrågaStaten">nybörjarguide.</a>
+
+<dt id="which_authority">Jag är inte säker på vilken myndighet jag ska göra min begäran om allmän handling till, hur kan jag ta reda på det? <a href="#which_authority">#</a> </dt>
+
+<dd>
+<p>Det kan vara svårt att reda ut den komplicerade strukturen av offentlig sektor, och fundera ut
+vem som har den information du behöver. Här är några tips:
+<ul>
+<li>Bläddra eller <a href="<%= search_redirect_path %>">sök</a> på FrågaStaten efter liknande förfrågningar som din.</li>
+<li>När du har hittat en myndighet du tror kan ha informationen du behöver, använd länken till höger på deras sida för att kontrollera vad de gör
+på deras hemsida. </li>
+<li>Kontakta den myndighet per telefon eller e-post för att fråga om de har den typ av
+information som du söker efter.</li>
+<li>Oroa dig inte alltför mycket om att hitta rätt myndighet från början. Om du har
+fel, borde de ge dig råd om vem du ska göra en sådan begäran om allmän handling till istället. </li>
+<li>Om du fick ett svårt fall kan du <a href="<%= help_contact_path %>">kontakta oss</a> för att få hjälp.</li>
+</ul>
+
+</dd>
+
+
+
+<dt id="missing_body">Ni saknar den myndighet som jag vill begära allmän handling av! <a href="#missing_body">#</a> </dt>
+
+<dd>
+<p>Vänligen <a href="<%= new_change_request_path %>">kontakta oss</a> med namnet på den myndighet och,
+om du kan hitta det, deras registrators e-postadress eller liknande för att göra begäran om allmän handling.
+</p>
+<p>Om du vilja hjälpa lägga till en hel kategori myndigheter till plattformen, ser vi fram emot att höra från dig också.
+</p>
+
+</dd>
+
+<dt id="authorities">Varför inkluderar ni vissa myndigheter som formellt inte innefattas av Offentlighetsprincipen?<a href="#authorities">#</a> </dt>
+
+<dd>
+<p>FrågaStaten låter dig göra begäran om allmän handling till en rad
+organisationer:</p>
+
+<ul>
+  <li> De formellt omfattas av Offentlighetsprincipen enligt Tryckfrihetsförordningen</li>
+  <li> De som formellt omfattas av miljöbestämmelser (en mindre bra
+  definierad grupp)</li>
+  <li> De som frivilligt följa Offentlighetsprincipen</li>
+  <li> De som formellt inte omfattas av Offentlighetsprincipen
+  <a href="https://www.fragastaten.se/body/edexcel"> men som vi tror bör göra det</a>
+  på grund av att de är bland de som har betydande offentligt ansvar.
+  </li>
+</ul>
+
+<p> I det sista fallet, använder vi webbplatsen för att lobba för expansion av
+omfattningen av Offentlighetsprincipen. Även om en organisation inte är skyldig att svara
+på en begäran om allmän handling, kan de fortfarande göra det frivilligt.
+</p>
+
+</dd>
+
+<dt id="focused">Varför måste jag hålla min begäran om allmän handling fokuserad? <a href="#focused">#</a> </dt>
+
+<dd>
+
+<p>
+Vänligen lägg bara till i din förfrågan vad som behövs så att någon
+enkelt kan identifiera vilken information du efterfrågar. Vänligen låt det
+<i>inte</i> innefatta något av det följande:
+</p>
+
+<ul>
+<li>argument om din sak</li>
+<li>uttalanden som kan förtala eller förolämpa andra</li>
+<li>frågor eller begäran om kommentar snarare än för specifik information</li>
+</ul>
+
+<p>
+Om du inkluderar främmande material,
+kanske vi måste ta bort din begäran om allmän handling för att undvika problem med
+ärekränkning, som är smärtsamt för både dig och oss.
+</p>
+
+<p>
+Webbplatsen är endast för att via förfrågningar om allmänna handlingar, inte för generell korrespondens
+med offentliga myndigheter. Att frasera din begäran som en fråga eller en begäran
+för kommentarer (t.ex &ldquo; varför gör ni X? &rdquo; eller &ldquo;vänligen
+förklara varför du gör X&rdquo;) gör det mer sannolikt att ditt meddelande
+inte kommer ses som en giltig begäran om allmän handling, både av oss och av den offentliga
+myndigheten. Att be om &ldquo;kopior av alla riktlinjer och rutiner
+om X&rdquo; skulle normalt resultera i en giltig begäran om allmän handling.
+</p>
+
+<p>
+Korta, koncisa budskap
+göra det lättare för myndigheterna att vara tydlig vilken information du är
+begär, vilket innebär att du kommer att få ett svar snabbare.
+</p>
+
+</dd>
+
+<dt id="responsible">Hur kan jag göra ansvarsfulla och effektiva FOI önskemål?<a href="responsible"#</a> </dt>
+
+<dd>
+Vi uppmuntrar alla våra användare att läsa <a href="http://www.foiman.com/foiguide1"> FOI Man &rsquo;s Tio bästa tips </a>
+på att göra ansvarsfulla och effektiva förfrågningar om allmänna handlingar och
+Skotska informations-kommissionärens
+<a href="http://www.itspublicknowledge.info/YourRights/tipsforrequesters.aspx"> Tips för att begära information </a>.
+</dd>
+
+<dt id="kampanj">Kan jag använda er webbplats för min kampanj?<a Href="#campaigning">#</a></dt>
+<dd>
+<p>
+Om du vill ha information för att stödja ett argument eller kampanj, är Offentlighetsprincipen
+ett kraftfullt verktyg. Även om du får inte använda denna webbplats för att
+driva din kampanj rekommenderar vi att du använder den för att få ut den information du har
+behov för. Vi rekommenderar också att driva din kampanj någon annanstans &ndash; ett effektiv
+och mycket enkelt sätt är att <%= link_to 'starta din egen blogg',
+"https://sv.wordpress.com/"%>. Du är välkommen att länka till din kampanj
+från denna plats i en anteckning till din förfrågan (du kan göra
+anteckningar När du har skickat en begäran).
+</p>
+
+</dd>
+
+<dt id="fees">Kostar det mig något att göra en begäran om allmän handling? <a href="#fees">#</a> </dt>
+
+<dd>
+
+<p><strong>Att göra en begäran om allmän handling är ofta kostnadsfritt men beror på om myndigheten väljer digitalt först eller ej.</strong></p>
+
+<p>Myndigheter inkluderar ibland onödigt, skrämmande, standardtext i
+kvitteringsmeddelanden som säger de och &ldquo;kanske&rdquo; tar ut en avgift. Ignorera sådana meddelanden.
+De kommer faktiskt sällan att ta ut en avgift. Om de gör det, kan de bara betalt om
+du har särskilt avtalats i förväg för att betala.<a
+href="https://ico.org.uk/for-organisations/guide-to-freedom-of-information/receiving-a-request/#15">Mer
+detaljer </a> från Information Commissioner. </p>
+
+<p>Ibland kommer en myndighet att vägra din begäran, och säga att kostnaden
+att hantera den överstiger ett antal kronor (för staten) eller ett annat antal kronor (för alla andra
+myndigheter). På denna punkt kan du finjustera begäran, t.ex. det skulle vara mycket billigare
+för en myndighet att berätta hur mycket
+spenderas på marshmallows under det senaste året än under de senaste tio åren. </p>
+
+</dd>
+
+
+<dt id="format">Kommer jag att få informationen i det format jag vill?<a href="#format">#</a> </dt>
+<dd>
+<p>
+Lagen kräver att om du ber om information som skall lämnas i en
+visst format den offentliga myndigheten är skyldig att ge någon
+uppgifter som lämnas ut i den anmodade format så länge det är som skäligen
+praktiskt att göra detta. Du har dock inte rätt att få ut handlingar
+digitalt vilket är varför lagstiftningen har hamnat på efterkälken.
+Tyvärr kan offentliga tjänstemän för närvarande tolka detta krav
+att endast hänvisa till valet mellan ta emot dokument i pappersformat eller
+ta emot dem elektroniskt och inte ett val av elektroniskt filformat.
+</p>
+</dd>
+
+
+<dt id="quickly_response">Hur snabbt kommer jag att få ett svar? <a href="#quickly_response">#</a> </dt>
+
+<dd>
+<p>Enligt lag måste de offentliga myndigheterna svara <strong>skyndsamt</strong>} på förfrågningar.
+</p>
+
+<p>Även om de inte är snabba, måste de i nästan alla fall svara inom
+1 arbetsdag. Om du är tvungen att klargöra din begäran, eller de är en skola,
+eller en eller två andra fall, då de kan ha mer tid för (<a href="<%= help_officers_path(:anchor => 'days') %>">detaljer</a>).</p>
+
+<p>FrågaStaten kommer att skicka dig ett e-postmeddelande om du inte får ett snabbt svar. Du kan
+sedan skicka den offentliga myndigheten ett meddelande för att påminna dem,
+och berätta för dem att deras hantering inte upplevs som skyndsam, fråga då vad det är som tar tid.</p>
+
+</dd>
+
+<dt id="no_response">Vad händer om jag aldrig får ett svar?<a href="#no_response">#</a> </dt>
+
+<dd>
+<p>Det finns flera saker du kan göra om du aldrig får ett svar.</p>
+<ul>
+    <li>Ibland har det varit ett verkligt problem och myndigheten aldrig
+    mottog begäran. Det är värt att ringa myndigheten och artigt
+    kontrollera att de tagit emot begäran. Det sändes till dem via e-post.
+    </li>
+    <li>Om de inte har fått det, är det mest sannolikt på grund av problem
+    med "spamfilter". Referera myndigheten till åtgärderna i svaret
+    <a href="<%= help_officers_path(:anchor => 'spam_problems') %>">Jag kan se en begäran från FrågaStaten, men vi fick aldrig det via e-post!</a>
+    i avsnittet för registratorer av denna hjälp.</li>
+    <li>Om du fortfarande inte har något tur, då kan du be om en intern granskning,
+    och sedan klaga hos Justitieombudsmannen om myndigheten.
+    Läs vår sida &lsquo;'<a href="<%= help_general_path(:action => 'unhappy') %>">Missnöjd med svaret du fick?</a>'.</li>
+</ul>
+</dd>
+
+<dt id="not_satifised">Vad händer om jag inte är nöjd med svaret? <a href="#not_satifised">#</a> </dt>
+<dd>
+<p>Om du inte fick den information du begärt, eller du gjorde fick den i tid,
+läs då vår sida '<a href="<%= help_general_path(:action => 'unhappy') %>">Missnöjd med svaret du fick?</a>'.</p>
+
+</dd>
+
+<dt id="reuse">Det säger att jag kan återanvända den information jag fick!<a href="#reuse">#</a> </dt>
+<dd>
+
+<p> Myndigheterna lägger ofta juridisk standardtext om
+<a href="http://www.legislation.gov.uk/uksi/2005/1515/contents/made">vidareutnyttjande av offentliga sektorn
+Informationsregleringar 2005</a>", som vid första anblicken innebär att du kanske inte
+kan göra något med informationen. </p>
+
+<p>Du kan naturligtvis skriva artiklar om informationen eller sammanfatta det, eller
+citera delar av den. Vi tror också att du ska känna dig fri att publicera
+informationen i sin helhet, precis som vi gör, även om du i teorin kanske inte har
+tillåtelse att göra det. Se <a href="<%= help_officers_path(:anchor => 'copyright') %>">vår policy om upphovsrätt</a>.</p>
+
+<p>Om den information du har fått är Crown Copyright då du har möjlighet att
+reproducera det under <a href="http://www.nationalarchives.gov.uk/information-management/government-licensing/about-the-ogl.htm">Öppen
+Regeringslicens</a> men det finns vissa villkor. </p>
+
+</dd>
+
+<dt id="ico_help">Kan du berätta mer ingående om processen för att göra förfrågningar? <a href="#ico_help">#</a> </dt>
+
+<dd>
+<p>Ta en titt på <a href="https://ico.org.uk/for-the-public/official-information/">
+tillgång till officiell information</a> sidor på Informationskommissionärens hemsida.</p>
+</dd>
+
+<dt id="data_protection">Kan jag begära information om mig själv? <a href="#data_protection">#</a> </dt>
+<dd>
+<p>Nej. Framställningar med hjälp av FrågaStaten är offentliga, gjord enligt Offentlighetsprincipen, och kan inte hjälpa dig att hitta information om en privat
+individ. Myndigheter ska inte skicka ut allmänna handlingar elektroniskt om de innehåller känsliga personliga uppgifter.</p>
+<p>Om du vill veta vilken information en offentlig myndigheten har om dig själv, bör du göra en &rdquo;Ämne: Åtkomstbegäran&rdquo; genom privat användning av personuppgiftslagen. <a href="http://www.datainspektionen.se/lagar-och-regler/personuppgiftslagen/dina-rattigheter/">
+Datainspektionens hemsida</a> &quot;ger råd om hur du får tillgång din
+egen personliga information</p>
+<p> Om du ser att någon har inkluderat personlig information, kanske
+omedvetet, i en begäran, vänligen <a href="<%= help_contact_path %>">kontakta oss omedelbart</a> så att vi kan ta bort det.</p> </dd>
+
+<dt id="private_requests">Jag vill hålla min begäran om allmän handling hemlig! (Åtminstone tills jag publicerat min artikel)  <a href="#private_requests">#</a> </dt>
+<dd>
+<p>FrågaStaten är för närvarande endast avsedd för offentliga förfrågningar. Alla svar som vi får publiceras automatiskt på hemsidan för alla
+att läsa. </p>
+<p>Du bör kontakta myndigheten direkt om du vill gör en förfrågan i privat. Om du är intresserad av att ha ett eget system som hjälper
+dig hantera förfrågningar i hemlighet, vänligen <a href="<%= help_contact_path %>">kontakta oss</a>. </p> </dd>
+
+<dt id="multiple">Kan jag göra samma begäran om allmän handling till massor av myndigheter, t.ex. alla råd och styrelser? <a href="#multiple">#</a> </dt>
+<dd>
+Vi ber dig att först skicka en testversion av din ansökan till ett fåtal
+myndigheterna. Deras svar kommer att hjälpa dig att förbättra formuleringen i din begäran,
+så att du får den bästa informationen när du skickar förfrågan till alla
+myndigheterna. Det finns för närvarande inget automatiserat system för att skicka en begäran
+till andra myndigheter, du måste kopiera och klistra in den för hand.
+</dd>
+<dt id="offsite">Jag gjorde en begäran från webbplatsen, hur gör jag ladda upp den till arkivet?<a href="#offsite">#</a> </dt>
+<dd>FrågaStaten är ett arkiv av förfrågningar som sker via webbplatsen,
+och försöker inte vara ett arkiv över alla förfrågningar om allmänna handlingar. Vi kommer aldrig att stödja uppladdning
+andra förfrågningar. Till exempel skulle inte vi kunna verifiera att andra
+svar faktiskt kom från myndigheten. Om detta verkligen är viktigt för dig kan
+du alltid göra samma begäran igen via FrågaStaten. </dd>
+<dt id="moderation">Hur modererar ni kommentarer vid förfrågningar? <a href="#moderation">#</a> </dt>
+<dd>
+<p>Anteckningar på FrågaStaten är till för att hjälpa människor får den information de vill, eller att ge dem pekare till platser de
+kan gå för att hjälpa dem att agera på det. Vi förbehåller oss rätten att ta bort något annat. </p>
+<p>Oändliga, politiska diskussioner är inte tillåtna.
+Posta en länk till ett lämpligt forum eller kampanjsite någon annanstans. </p>
+<dd>
+</dd>
+</dl>
+
+<p><strong>Härnäst</strong>, läs om <a href="<%= help_privacy_path %>">din integritet</a> -&gt;
+
+<div id="hash_link_padding"></div>

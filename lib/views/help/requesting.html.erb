@@ -4,7 +4,7 @@
 
 <h1 id="making_requests"><%= @title %> <a href="#making_requests">#</a></h1>
 
-<strong>Never made a request before?</strong> Follow our
+<strong>Never made a request before?</strong> Follow our international
 <a href="https://www.mysociety.org/2014/08/15/how-to-make-a-freedom-of-information-request-with-whatdotheyknow/"
 title="How to make a Freedom of Information request with WhatDoTheyKnow">beginners guide.</a>
 
@@ -16,7 +16,7 @@ title="How to make a Freedom of Information request with WhatDoTheyKnow">beginne
 <p>It can be hard to untangle the complicated structure of government, and work out
 who has the information you want. Here are a few tips:
 <ul>
-<li>Browse or <a href="<%= search_redirect_path %>">search</a> WhatDoTheyKnow
+<li>Browse or <a href="<%= search_redirect_path %>">search</a> FrågaStaten
 looking for similar requests to yours.</li>
 <li>When you&rsquo;ve found an authority you think might have the information, use
 the &ldquo;home page&rdquo; link on the right hand side of their page to check what they do
@@ -48,7 +48,7 @@ to hear from you too.
 <dt id="authorities">Why do you include some authorities that aren&rsquo;t formally subject to FOI?<a href="#authorities">#</a> </dt>
 
 <dd>
-<p>WhatDoTheyKnow lets you make requests for information to a range of
+<p>FrågaStaten lets you make requests for information to a range of
 organisations:</p>
 
 <ul>
@@ -57,7 +57,7 @@ organisations:</p>
   defined group)</li>
   <li> Those which voluntarily comply with the FOI Act</li>
   <li> Those which aren&rsquo;t subject to the Act
-  <a href="https://www.whatdotheyknow.com/body/edexcel">but we think should be</a>,
+  <a href="https://www.fragastaten.se/body/edexcel">but we think should be</a>,
   on grounds
   such as them having significant public responsibilities.
   </li>
@@ -126,7 +126,7 @@ Information is a powerful tool. Although you may not use this site to
 run your campaign, we encourage you to use it to get the information you
 need. We also encourage to run your campaign elsewhere &ndash; one effective
 and very easy way is to <%= link_to 'start your own blog',
-"http://wordpress.com/"%>. You are welcome to link to your campaign
+"https://wordpress.com/"%>. You are welcome to link to your campaign
 from this site in an annotation to your request (you can make
 annotations after submitting the request).
 </p>
@@ -137,11 +137,11 @@ annotations after submitting the request).
 
 <dd>
 
-<p><strong>Making an FOI request is nearly always free.</strong></p>
+<p><strong>Making an FOI request is nearly always free but depends on if the authority prioritizes digital first.</strong></p>
 
-<p>Authorities often include unnecessary, scary, boilerplate in
+<p>Authorities sometimes include unnecessary, scary, boilerplate in
 acknowledgement messages saying they &ldquo;may&rdquo; charge a fee. Ignore such notices.
-They hardly ever will actually charge a fee. If they do, they can only charge you if
+They will actually rarely charge a fee. If they do, they can only charge you if
 you have specifically agreed in advance to pay. <a
 href="https://ico.org.uk/for-organisations/guide-to-freedom-of-information/receiving-a-request/#15">More
     details</a> from the Information Commissioner.
@@ -162,20 +162,14 @@ spent on marshmallows in the past year than in the past ten years.
 The law requires that if you ask for the information to be provided in a
 particular format the public authority is required to provide any
 information released in the requested format so long as it is as reasonably
-practicable to do so. Unfortunately, the Information Commissioner and Tribunal
-are currently interpreting this requirement to refer only to the choice between
-receiving documents in paper format or receiving them electronically and not to
-a choice of electronic file format.
+practicable to do so. However you do not have the right to receive documents
+in a digital format which is why the legislation has been behind.
+Unfortunately, public sevants may currently be interpreting this requirement
+to refer only to the choice between receiving documents in paper format
+or receiving them electronically and not to a choice of electronic file format.
 </p>
-
-<p>
-We think the person making the request should be able to specify an electronic
-format and we note that the Freedom of Information Act 2000 uses the words
-&lsquo;<a href="http://www.legislation.gov.uk/ukpga/2000/36/section/11">...
-or in another form acceptable to the applicant</a>&rsquo;.
-</p>
-
 </dd>
+
 
 <dt id="quickly_response">How quickly will I get a response? <a href="#quickly_response">#</a> </dt>
 
@@ -185,13 +179,13 @@ requests.
 </p>
 
 <p>Even if they are not prompt, in nearly all cases they must respond within
-20 working days. If you had to clarify your request, or they are a school,
+1 working day. If you had to clarify your request, or they are a school,
 or one or two other cases, then they may have more time
 (<a href="<%= help_officers_path(:anchor => 'days') %>">full details</a>).
 
-<p>WhatDoTheyKnow will email you if you don&rsquo;t get a timely response.  You can
-then send the public authority a message to remind them, and tell them if they
-are breaking the law.</p>
+<p>FrågaStaten will email you if you don&rsquo;t get a timely response.  You can
+then send the public authority a message to remind them, and tell them that their
+processing is not experienced as hasty, and ask them what it is that is taking time.</p>
 
 </dd>
 
@@ -206,7 +200,7 @@ are breaking the law.</p>
     </li>
     <li>If they have not received it, the problem is most likely due to
     "spam filters". Refer the authority to the measures in the answer
-    &lsquo;<a href="<%= help_officers_path(:anchor => 'spam_problems') %>">I can see a request on WhatDoTheyKnow, but we never got it by email!</a>&rsquo;
+    &lsquo;<a href="<%= help_officers_path(:anchor => 'spam_problems') %>">I can see a request on FrågaStaten, but we never got it by email!</a>&rsquo;
     in the FOI officers section of this help.
     </li>
     <li>If you&rsquo;re still having no luck, then you can ask for an internal review,
@@ -247,24 +241,17 @@ Government Licence</a> but there are some conditions.
 <p>Have a look at the
 <a href="https://ico.org.uk/for-the-public/official-information/">access to official information</a>
 pages on the Information Commissioner&rsquo;s website.</p>
-
-<p>If you&rsquo;re requesting information from a Scottish public authority,
-the process is very similar. There are differences around time
-limits for compliance.
-See the <a href="http://www.itspublicknowledge.info/YourRights/YourRights.aspx">Scottish
-Information Commissioner&rsquo;s guidance</a> for details.</p>
 </dd>
 
 <dt id="data_protection">Can I request information about myself? <a href="#data_protection">#</a> </dt>
 
 <dd>
-<p>No. Requests made using WhatDoTheyKnow are public, made under the Freedom of
-Information Act, and cannot help you find information about a private
-individual.</p>
+<p>No, not at FrågaStaten. Requests made using FrågaStaten are public, made under the Principle of Public Access (Offentlighetsprincipen), and cannot help you find information about a private
+individual. Public bodies should not send out public documents electronically if they contain sensitive personal details.</p>
 
 <p>If you would like to know what information a public
-authority holds about yourself, you should make a &ldquo;Subject Access Request&rdquo; in private using Data Protection law.
- <a href="https://ico.org.uk/for-the-public/personal-information/">The
+authority holds about yourself, you should make a &ldquo;Subject Access Request&rdquo; in private using the Data Protection law.
+ <a href="http://www.datainspektionen.se/lagar-och-regler/personuppgiftslagen/dina-rattigheter/">The
 Information Commissioner&rsquo;s website</a> provides advice on accessing your
 own personal information</p>
 
@@ -276,34 +263,12 @@ immediately so we can remove it.</p>
 
 <dt id="private_requests">I&rsquo;d like to keep my request secret! (At least until I publish my story) <a href="#private_requests">#</a> </dt>
 
-<dd><p>WhatDoTheyKnow is currently only designed for public requests. All
+<dd><p>FrågaStaten is currently only designed for public requests. All
 responses that we receive are automatically published on the website for anyone
 to read.  </p>
 <p>You should contact the public authority directly if you would like to
 make a request in private.  If you&rsquo;re interested in buying a system which helps
 you manage FOI requests in secret, then <a href="<%= help_contact_path %>">contact us</a>.
-</p>
-</dd>
-
-<dt id="eir">Why can I only request information about the environment from some authorities? <a href="#eir">#</a> </dt>
-
-<dd>
-<p>Some public authorities, such as <a href="http://www.whatdotheyknow.com/body/milford_haven_port_authority">Milford Haven Port Authority</a>,
-don&rsquo;t come under the Freedom of Information Act, but do come under another law called
-the Environmental Information Regulations (EIR).
-</p>
-
-<p>It&rsquo;s a very similar law, so you make a request
-to them using WhatDoTheyKnow in just the same way as an FOI request. The only
-difference is that on the page where your write you request, it reminds you
-that you can only request &ldquo;environmental information&rdquo; and tells you what that
-means. It is quite broad.
-</p>
-
-<p>You can, of course, request environmental information from other
-authorities. Just make a Freedom of Information (FOI) request as normal. The
-authority has a duty to work out if the Environmental Information Regulations
-(EIR) is the more appropriate legislation to reply under.
 </p>
 </dd>
 
@@ -319,17 +284,17 @@ to the other authorities, you must copy and paste it by hand.
 
 <dt id="offsite">I made a request off the site, how do I upload it to the archive?<a href="#offsite">#</a> </dt>
 
-<dd>WhatDoTheyKnow is an archive of requests made through the site,
+<dd>FrågaStaten is an archive of requests made through the site,
 and does not try to be an archive of all FOI requests. We&rsquo;ll never support uploading
 other requests. For one thing, we wouldn&rsquo;t be able to verify that other
 responses actually came from the authority. If this really matters to you,
-you can always make the same request again via WhatDoTheyKnow.
+you can always make the same request again via FrågaStaten.
 </dd>
 
 <dt id="moderation">How do you moderate request annotations? <a href="#moderation">#</a> </dt>
 
 <dd>
-<p>Annotations on WhatDoTheyKnow are to help
+<p>Annotations on FrågaStaten are to help
 people get the information they want, or to give them pointers to places they
 can go to help them act on it. We reserve the right to remove anything else.
 </p>
